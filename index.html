@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-color: #041a3a; /* dark blue */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+
+    .container {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .text {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .emoji {
+      font-size: 10rem; /* EXTRA LARGE */
+      animation: flash 0.3s infinite; /* rapid flashing */
+    }
+
+    @keyframes flash {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body onclick="window.location.href='https://xyz.com'">
+
+  <div class="container">
+    <div class="text">CLICK HERE NOW</div>
+    <div class="emoji">👆</div>
+  </div>
+
+</body>
+</html>
